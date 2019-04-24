@@ -6,12 +6,22 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
+    <form id="formulaire" method="POST" action="index.html">
+        <label>e-mail</label><input id="email" type="email" name="e-mail">
+        <label>mot de passe</label><input id="password" type="text" name="password">
+        <button id="btn" name="btn" type="submit" value="btn">Se connecter</button>
+    </form>
     </div>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>  
 </body>
 
 </html>

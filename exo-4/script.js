@@ -8,9 +8,16 @@ $('nav ul:first li:nth-child(2)').on ('dblclick', (event) => {
     $(event.currentTarget).hide();
  });
 
+
+/*for (var i=0; i = 4; i++)
+{
+    var nombreArticles[i] = $('.panel-footer')[i].text();
+    alert(nombreArticles[i]);
+}*/
+
 var articles = 1;
 
-$('img').on('click', () => {
+$('img').on('click', () => {             //ajout au panier de l'article en cliquant sur l'image
     $('nav ul:last li:nth-child(2) a').html('<span class="glyphicon glyphicon-shopping-cart"></span> Cart (' + articles++ + ')');
 });
 
@@ -26,11 +33,11 @@ $('form input').on('click', () => {
     alert("vous avez cliqué dans le champ de saisie d'adresse");
 });
 
-$('form input').on('keypress', () => {
-    console.log("vous avez tapé quelque chose ici");
+$('form input').on('keypress', (event) => {
+    console.log("saisie : " + ((event.currentTarget).value));  //afficher en temps réel la saisie dans la console
 });
 
-//afficher en temps réel la saisie dans la console
+
 
 
 
