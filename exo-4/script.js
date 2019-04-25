@@ -22,15 +22,16 @@ console.log($('#iPad').parent().parent().children(".panel-footer").text());
 
 var articles = 1;
 
-$('img').on('click', () => {             //ajout au panier de l'article en cliquant sur l'image
-    $('nav ul:last li:nth-child(2) a').html('<span class="glyphicon glyphicon-shopping-cart"></span> Cart (' + articles++ + ')');
-});
+$('img').on('click', (event) => {             //ajout au panier de l'article en cliquant sur l'image
+    var textePromo = $(event.currentTarget).parent().parent().children(".panel-footer").text();  //on récupère le texte avec le nombre d'articles de la promo
+    $('nav ul:last li:nth-child(2) a').html('<span class="glyphicon glyphicon-shopping-cart"></span> Cart (' + textePromo[4] + textePromo[5] + ')'); //on affiche juste ce nombre dans le panier (chiffres en positions 4 et 5)
+});    //on remplace la div contenant l'icône du panier et le total de produits par le même icône + le nouveau total
 
 /*$('#iPad').on('mouseover', event => {                    version avec id
     console.log('L\'utilisateur regarde l\'iPad');
 });*/
 
-$('img').on('mouseover', (event) => {          //version sans id (toutes les images)
+$('img').on('mouseover', (event) => {          //version sans id (toutes les images) : c'est mieux !
     console.log('L\'utilisateur regarde ' + $(event.currentTarget).attr('id'));
 });
 
