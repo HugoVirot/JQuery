@@ -15,6 +15,11 @@ $('nav ul:first li:nth-child(2)').on ('dblclick', (event) => {
     alert(nombreArticles[i]);
 }*/
 
+console.log($('#iPad').parent().parent().children(".panel-footer").text());
+
+
+
+
 var articles = 1;
 
 $('img').on('click', () => {             //ajout au panier de l'article en cliquant sur l'image
