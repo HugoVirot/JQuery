@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 ```
 
-4. Commenter les lignes de codes ci dessous.
+4. Commenter les lignes de codes ci dessus.
 5. En quoi cette ligne est indispensable ?
 6. Quel symbole permet de repérer dans un programme Javascript que du jQuery est utilisé ? (attention, ce n'est pas toujours le cas...)
 

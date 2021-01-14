@@ -3,15 +3,51 @@
 
 <head>
     <meta charset="utf-8">
+
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Plugin CSS file with desired skin-->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
 </head>
 
-<body>
-    <div class="container">
+<body class="container">
+
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="watch1.jpg" />
+          </li>
+          <li>
+            <img src="watch2.jpg" />
+          </li>
+          <li>
+            <img src="watch1.jpg" />
+          </li>
+          <li>
+            <img src="watch2.jpg" />
+          </li>
+        </ul>
+      </div>
+
+    <div class="container" id="demo">
     </div>
+
+    <input type="text" id="js-range-slider" name="my_range"
+     value="" data-type="double" data-min="0" data-max="1000"
+        data-from="200" data-to="500" data-grid="true" />
+
+    <input type="text" class="js-range-slider" name="my_range" value="" />
+    <script src="script.js"></script>
 </body>
+
 
 </html>
